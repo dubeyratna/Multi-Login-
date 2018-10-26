@@ -68,6 +68,15 @@
                             </li>
                         @endguest
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                  Add Image<span class="caret"></span>
+                               </a>
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="addimage">Add Image</a></li>
+                                   </ul>
+                           </li>
                 </div>
             </div>
         </nav>

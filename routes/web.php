@@ -21,6 +21,14 @@ Route::get('auth/google', 'Auth\GoogleController@redirectToProvider');
 Route::get('auth/google/callback', 'Auth\GoogleController@handleProviderCallback');
 Route::get('auth/linkedin', 'Auth\LinkedinController@redirectToProvider');
 Route::get('auth/linkedin/callback', 'Auth\LinkedinController@handleProviderCallback');
+Route::get('auth/twitter', 'Auth\TwitterController@redirectToProvider');
+Route::get('auth/twitter/callback', 'Auth\TwitterController@handleProviderCallback');
+Route::get('auth/github', 'Auth\GithubController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\GithubController@handleProviderCallback');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('addimage', 'AddImageController@index');
+Route::get('addimage/create', 'AddImageController@create');
+Route::post('addimage', 'AddImageController@store');

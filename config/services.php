@@ -51,4 +51,16 @@ return [
         'client_secret' =>env('LINKEDIN_SECRET'), // Your GitHub Client Secret
         'redirect' => env('LINKEDIN_REDIRECT_URL'),
     ],
+
+    'twitter' => [
+        'client_id' =>env('TWITTER_ID'),         // Your GitHub Client ID
+        'client_secret' =>env('TWITTER_SECRET'), // Your GitHub Client Secret
+        'redirect' => env('TWITTER_REDIRECT_URL'),
+    ],
+
+    'github' => [
+        'client_id' =>env('GITHUB_ID'),         // Your GitHub Client ID
+        'client_secret' =>env('GITHUB_SECRET'), // Your GitHub Client Secret
+        'redirect' => env('GITHUB_REDIRECT_URL'),
+    ],
 ];
